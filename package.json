@@ -1,16 +1,39 @@
 {
   "name": "@nexovirt/sdk",
   "version": "0.1.0",
-  "description": "OpenAPI client for @nexovirt/sdk",
-  "author": "OpenAPI-Generator",
+  "description": "Official TypeScript/JavaScript SDK for the NexoVirt REST API over Proxmox VE (hosts, guests, plans, IPAM, firewall, snapshots).",
+  "keywords": [
+    "nexovirt",
+    "proxmox",
+    "proxmox-ve",
+    "vps",
+    "virtualization",
+    "rest-api",
+    "sdk",
+    "kvm",
+    "lxc"
+  ],
+  "homepage": "https://nexovirt.com",
+  "license": "MIT",
+  "author": "NexoVirt",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+    "url": "git+https://github.com/NexoVirt/nexovirt-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NexoVirt/nexovirt-node/issues"
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "module": "./dist/esm/index.js",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsc && tsc -p tsconfig.esm.json",
     "prepare": "npm run build"
